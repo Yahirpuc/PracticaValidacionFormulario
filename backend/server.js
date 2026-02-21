@@ -25,7 +25,7 @@ app.post('/register', async (req, res) => {
     }
 
     try {
-        // 4. Datos Únicos: Validar Username 
+         
         const userCheck = await findUserByUsername(username);
         if (userCheck) return res.status(400).json({ error: "El nombre de usuario ya existe." });
 
@@ -33,7 +33,7 @@ app.post('/register', async (req, res) => {
         const emailCheck = await findUserByEmail(email);
         if (emailCheck) return res.status(400).json({ error: "El email ya está registrado." });
 
-        // Guardar ciudadano
+        
         const newUser = await saveUser(username, email);
         res.status(201).json({ message: "Ciber-Ciudadano registrado con éxito", user: newUser });
 
