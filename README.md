@@ -6,7 +6,7 @@ Proyecto académico de validación de formularios con verificación en FrontEnd 
 
 * **Frontend:** Vue.js, HTML5, JavaScript
 * **Backend:** Node.js, Express
-* **Base de datos:** (agrega la que uses)
+* **Base de datos:** SQLite
 
 ## ✅ Funcionalidades
 
@@ -23,14 +23,14 @@ Proyecto académico de validación de formularios con verificación en FrontEnd 
 
 ```bash
 npm install
-npm start
+node server.js
 ```
 
 ### Frontend
 
 ```bash
 npm install
-npm run serve
+npm run dev
 ```
 
 ## 📚 Objetivo
