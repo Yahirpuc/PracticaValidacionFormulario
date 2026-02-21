@@ -1,0 +1,77 @@
+
+
+.m3-dark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #0d1110;
+  color: #e0e3e1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.m3-card-dark {
+  background: #1a211f;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid #2d3835;
+}
+
+.m3-title { color: #52ffca; margin: 0; font-size: 26px; font-weight: 600; text-align: center; }
+.m3-subtitle { color: #aebdb9; margin: -10px 0 10px 0; font-size: 14px; text-align: center; }
+
+.m3-field { display: flex; flex-direction: column; gap: 6px; }
+.m3-field label { font-size: 13px; font-weight: 500; color: #52ffca; margin-left: 8px; }
+
+.m3-field input {
+  padding: 14px 18px;
+  border: 2px solid #3d4a46;
+  border-radius: 12px;
+  font-size: 16px;
+  background-color: #242d2a;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.m3-field input:focus {
+  outline: none;
+  border-color: #52ffca;
+  box-shadow: 0 0 8px rgba(82, 255, 202, 0.2);
+}
+
+.m3-captcha-card {
+  background: #243530;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px dashed #52ffca;
+}
+
+.captcha-label { font-size: 11px; text-transform: uppercase; color: #aebdb9; letter-spacing: 1px; }
+.captcha-question { font-weight: bold; margin: 10px 0; color: #fff; font-size: 18px; }
+
+.m3-btn-emerald {
+  background-color: #52ffca;
+  color: #0d1110;
+  padding: 15px;
+  border-radius: 16px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.m3-btn-emerald:hover:not(:disabled) { transform: translateY(-2px); background-color: #3ef0b8; }
+.m3-btn-emerald:disabled { background-color: #3d4a46; color: #72817d; cursor: not-allowed; opacity: 0.6; }
+
+.m3-alert { padding: 15px; border-radius: 12px; font-size: 14px; text-align: center; font-weight: 500; }
+.m3-alert-success { background: rgba(82, 255, 202, 0.1); color: #52ffca; border: 1px solid #52ffca; }
+.m3-alert-error { background: rgba(255, 110, 110, 0.1); color: #ff6e6e; border: 1px solid #ff6e6e; }
+.m3-error-text { color: #ff6e6e; font-size: 11px; margin-top: 4px; margin-left: 8px; }
